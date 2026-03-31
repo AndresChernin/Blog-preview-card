@@ -1,0 +1,98 @@
+:root{
+    --body-background-color:hsl(47, 88%, 63%);
+    --container-bg-color: hsl(0, 0%, 100%);
+    --fat-text-color: hsl(0, 0%, 7%);
+    --small-text-color: hsl(0, 0%, 42%);
+    --radius-for-container:0.938rem;
+    --radius-for-foto:0.625rem;
+    --radius-for-learning-part:0.313rem;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-background-color) ;
+    
+    min-height:100vh;
+    margin:0;
+    font-family: 'Figtree', sans-serif;
+}
+p,h1,img{
+    margin:0;
+    padding:0;
+}
+.card-container{
+    width:min(18.75rem,90%);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0.938rem;
+    background-color: var(--container-bg-color);
+    gap:0.938rem;
+    border-radius: var(--radius-for-container);
+    border:1px solid black;
+    box-shadow: 0.438rem 0.438rem;
+}
+.image-settings{ 
+    width:100%; 
+    border-radius: var(--radius-for-foto); 
+}
+/*.learning-part{
+    width:16%;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    background-color: var(--body-background-color);
+    color:var(--fat-text-color);
+    font-size: 11.5px;
+    font-weight: 800;
+    border-radius: var(--radius-for-learning-part);
+    display:flex;
+    justify-content: center;
+}*/
+
+
+.learning-part p{
+    display: inline-block;
+    padding: 0.313rem 0.625rem;
+    background-color: var(--body-background-color);
+    font-weight: 800;
+    border-radius: var(--radius-for-learning-part);
+    font-size: 0.719rem;
+}
+.datum-part{
+    font-size:0.75rem;
+}
+.foundations-part{
+    font-size:1.25rem;
+    font-weight: 800;
+    color:var(--fat-text-color);
+}
+.discription-part{
+    max-width:35ch;
+    font-weight: 500;
+    font-size:0.875rem;
+    color:var(--small-text-color);
+
+}
+.autor-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:var(--fat-text-color);
+    font-size: 0.719rem;
+    font-weight: 800;
+    width:100%;
+    gap:0.625rem;
+}
+.image-of-autor{
+    width:2rem;
+}
+
+@media(max-width:23.438rem){
+    .discription-part{
+        max-width:20ch;
+    }
+}
+
