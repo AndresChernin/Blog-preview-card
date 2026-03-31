@@ -22,7 +22,7 @@ p,h1,img{
     padding:0;
 }
 .card-container{
-    width:min(18.75rem,90%);
+    width:min(20rem,90%);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -59,20 +59,20 @@ p,h1,img{
     background-color: var(--body-background-color);
     font-weight: 800;
     border-radius: var(--radius-for-learning-part);
-    font-size: 0.719rem;
+    font-size: 0.9rem;
 }
 .datum-part{
-    font-size:0.75rem;
+    font-size:0.95rem;
 }
 .foundations-part{
-    font-size:1.25rem;
+    font-size:1.5rem;
     font-weight: 800;
     color:var(--fat-text-color);
 }
 .discription-part{
     max-width:35ch;
     font-weight: 500;
-    font-size:0.875rem;
+    font-size:1rem;
     color:var(--small-text-color);
 
 }
@@ -81,13 +81,13 @@ p,h1,img{
     justify-content: flex-start;
     align-items: center;
     color:var(--fat-text-color);
-    font-size: 0.719rem;
+    font-size: 0.9rem;
     font-weight: 800;
     width:100%;
     gap:0.625rem;
 }
 .image-of-autor{
-    width:2rem;
+    width:2.3rem;
 }
 
 @media(max-width:23.438rem){
